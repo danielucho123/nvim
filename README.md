@@ -39,10 +39,6 @@
 4. `cd nvim`
 5. `zgit clone https://github.com/danielucho123/nvim-config.git .`
 
-## After install on vim 
-1. coc-pyright
-2. coc-snippets
-3. coc-word
-4. :CocInstall coc-htmldjango
-
+## After install on vim
+:CocInstall coc-htmldjango coc-word coc-snippets coc-pyright
 and on vim `:setfiletype htmldjango`
