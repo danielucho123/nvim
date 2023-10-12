@@ -1,0 +1,10 @@
+{
+	"html.enable": true,
+	"html.filetypes": [
+		"htmldjango",
+		"django",
+		"html",
+		"handlebars",
+	],
+	"html.format.enable": true,
+}

@@ -3,11 +3,18 @@
   1. `sudo apt update && sudo apt upgrade`
   3. `sudo apt install curl`
      ### Git instalation
-  5. `sudo apt-get install git-all`
-     ### Python installation 
-  8. `sudo apt install wget build-essential libncursesw5-dev libssl-dev \
-libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev`
-  9. https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-11-on-ubuntu-20-04-and-22-04-lts/
+  4. `sudo apt-get install git-all`
+     ### Python installation
+  5. sudo add-apt-repository ppa:deadsnakes/ppa
+  6. sudo apt-get update
+  7. sudo apt-get install python3.11-venv
+  8. sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 1 [OldPython]
+  9. sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.11 2 [NewPython]
+  10. sudo update-alternatives --config python3
+  11. sudo apt update
+  12. sudo apt install python3-pip
+  13. pip install neovim
+
    ### Nodejs Instalation 
    https://github.com/nodesource/distributions
 ## Nvim Installation
@@ -15,6 +22,15 @@ libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev`
   2. `git clone https://github.com/neovim/neovim`
   3. `cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo`
   4. `cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb`
+  5. install from https://github.com/wbthomason/packer.nvim
+
+## Nvim Libraries Installation
+### Packer
+1. `git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim`
+### Telescope
+1. curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+2. sudo dpkg -i ripgrep_13.0.0_amd64.deb
 
 ## Nvim lib 
 1. create the .config with `mkdir .config`
@@ -23,7 +39,10 @@ libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev`
 4. `cd nvim`
 5. `zgit clone https://github.com/danielucho123/nvim-config.git .`
 
-## Packers
-1. `curl -LO https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb`
-2. `sudo dpkg -i ripgrep_13.0.0_amd64.deb`
-3. 
+## After install on vim 
+1. coc-pyright
+2. coc-snippets
+3. coc-word
+4. :CocInstall coc-htmldjango
+
+and on vim `:setfiletype htmldjango`
