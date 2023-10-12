@@ -44,7 +44,7 @@ return require('packer').startup(function(use)
 	use {
 		"williamboman/mason.nvim"
 	}
+	use "lukas-reineke/indent-blankline.nvim"
 
 
 end)
-

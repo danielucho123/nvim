@@ -6,5 +6,6 @@
 		"html",
 		"handlebars",
 	],
-	"html.format.enable": true,
+  "html.format.enable": true,
+  "snippets.ultisnips.pythonPrompt": false,
 }
