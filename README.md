@@ -41,8 +41,6 @@
 
 ## After install on vim 
 1. coc-pyright
-2. coc-snippets
-3. coc-word
-4. :CocInstall coc-htmldjango
+4. :CocInstall coc-htmldjango coc-snippets coc-pyright coc-html coc-css coc-json
 
 and on vim `:setfiletype htmldjango`
