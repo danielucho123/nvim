@@ -1,11 +1,11 @@
 {
-	"html.enable": true,
-	"html.filetypes": [
-		"htmldjango",
-		"django",
-		"html",
-		"handlebars",
-	],
-  "html.format.enable": true,
-  "snippets.ultisnips.pythonPrompt": false,
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  },
+  "html.filetypes":["html","handlebars","htmldjango","blade"]
 }

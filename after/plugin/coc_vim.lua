@@ -146,4 +146,5 @@ vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}"
 
 
 
-require'luasnip'.filetype_extend("htmldjango", {"html"})
+--require'luasnip'.filetype_extend("htmldjango", {"html"})
+
