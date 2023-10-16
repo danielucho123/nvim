@@ -23,8 +23,8 @@ return require('packer').startup(function(use)
 		branch = 'v3.x',
 		requires = {
 			--- Uncomment these if you want to manage LSP servers from neovim
-			-- {'williamboman/mason.nvim'},
-			-- {'williamboman/mason-lspconfig.nvim'},
+			 {'williamboman/mason.nvim'},
+			 {'williamboman/mason-lspconfig.nvim'},
 
 			-- LSP Support
 			{'neovim/nvim-lspconfig'},
@@ -42,10 +42,11 @@ return require('packer').startup(function(use)
 	use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
 
 	use 'romgrk/barbar.nvim'
-	use {
-		"williamboman/mason.nvim"
-	}
+
 	-- use "lukas-reineke/indent-blankline.nvim"
+	use 'andweeb/presence.nvim' 
+	use 'ryanoasis/vim-devicons'
 
 
 end)
+
