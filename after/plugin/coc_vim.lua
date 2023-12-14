@@ -144,7 +144,5 @@ vim.api.nvim_create_user_command("OR", "call CocActionAsync('runCommand', 'edito
 -- provide custom statusline: lightline.vim, vim-airline
 vim.opt.statusline:prepend("%{coc#status()}%{get(b:,'coc_current_function','')}")
 
-
-
 --require'luasnip'.filetype_extend("htmldjango", {"html"})
 
