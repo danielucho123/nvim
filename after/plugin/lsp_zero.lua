@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
@@ -6,7 +5,6 @@ lsp_zero.on_attach(function(client, bufnr)
   -- to learn the available actions
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
-=======
 -- Setup language servers.
 
 lspconfig.pyright.setup {}
@@ -78,4 +76,3 @@ lspconfig.emmet_language_server.setup({
     variables = {},
   },
 })
->>>>>>> Stashed changes
