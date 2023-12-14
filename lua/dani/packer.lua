@@ -39,16 +39,14 @@ return require('packer').startup(function(use)
 	use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
 	use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
 	use 'romgrk/barbar.nvim'
-<<<<<<< Updated upstream
 	use {
 		"williamboman/mason.nvim"
 	}
-=======
 
 	-- use "lukas-reineke/indent-blankline.nvim"
 	use 'andweeb/presence.nvim' 
->>>>>>> Stashed changes
 	use "lukas-reineke/indent-blankline.nvim"
+	use {'ms-jpq/coq_nvim', branch = 'coq'}
 
 
 end)

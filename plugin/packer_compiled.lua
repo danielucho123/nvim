@@ -49,13 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-<<<<<<< Updated upstream
-local package_path_str = "/home/daniel/.cache/nvim/packer_hererocks/2.1.1696795921/share/lua/5.1/?.lua;/home/daniel/.cache/nvim/packer_hererocks/2.1.1696795921/share/lua/5.1/?/init.lua;/home/daniel/.cache/nvim/packer_hererocks/2.1.1696795921/lib/luarocks/rocks-5.1/?.lua;/home/daniel/.cache/nvim/packer_hererocks/2.1.1696795921/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/daniel/.cache/nvim/packer_hererocks/2.1.1696795921/lib/lua/5.1/?.so"
-=======
 local package_path_str = "C:\\Users\\DANIEL~1.MOR\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\share\\lua\\5.1\\?.lua;C:\\Users\\DANIEL~1.MOR\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\DANIEL~1.MOR\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\DANIEL~1.MOR\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
 local install_cpath_pattern = "C:\\Users\\DANIEL~1.MOR\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.1696795921\\lib\\lua\\5.1\\?.so"
->>>>>>> Stashed changes
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -79,185 +74,20 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  LuaSnip = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/LuaSnip",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
->>>>>>> Stashed changes
-    url = "https://github.com/L3MON4D3/LuaSnip"
-  },
-  ["barbar.nvim"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\barbar.nvim",
->>>>>>> Stashed changes
-    url = "https://github.com/romgrk/barbar.nvim"
-  },
-  ["cmp-nvim-lsp"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["coc.nvim"] = {
-    loaded = true,
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/coc.nvim",
-    url = "https://github.com/neoclide/coc.nvim"
-  },
-  ["gitsigns.nvim"] = {
-    loaded = true,
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["gitsigns.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim",
->>>>>>> Stashed changes
-    url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  harpoon = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/harpoon",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
->>>>>>> Stashed changes
-    url = "https://github.com/ThePrimeagen/harpoon"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-=======
     path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim",
->>>>>>> Stashed changes
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["lsp-zero.nvim"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/mason.nvim",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
-    url = "https://github.com/VonHeikemen/lsp-zero.nvim"
-  },
-  ["mason-lspconfig.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
-    url = "https://github.com/williamboman/mason-lspconfig.nvim"
-  },
-  ["mason.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
->>>>>>> Stashed changes
-    url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["nvim-cmp"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
->>>>>>> Stashed changes
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lspconfig"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
->>>>>>> Stashed changes
-    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-=======
     path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
->>>>>>> Stashed changes
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
-  ["nvim-web-devicons"] = {
+  ["treesitter-indent-object.nvim"] = {
     loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
->>>>>>> Stashed changes
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["onedark.vim"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/onedark.vim",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.vim",
->>>>>>> Stashed changes
-    url = "https://github.com/joshdick/onedark.vim"
-  },
-  ["packer.nvim"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/packer.nvim",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
->>>>>>> Stashed changes
-    url = "https://github.com/wbthomason/packer.nvim"
-  },
-  ["plenary.nvim"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ripgrep = {
-    loaded = true,
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/ripgrep",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
-    url = "https://github.com/nvim-lua/plenary.nvim"
-  },
-  ["presence.nvim"] = {
-    loaded = true,
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\presence.nvim",
-    url = "https://github.com/andweeb/presence.nvim"
-  },
-  ripgrep = {
-    loaded = true,
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ripgrep",
->>>>>>> Stashed changes
-    url = "https://github.com/BurntSushi/ripgrep"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
->>>>>>> Stashed changes
-    url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["vim-airline"] = {
-    loaded = true,
-<<<<<<< Updated upstream
-    path = "/home/daniel/.local/share/nvim/site/pack/packer/start/vim-airline",
-=======
-    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-airline",
->>>>>>> Stashed changes
-    url = "https://github.com/vim-airline/vim-airline"
+    path = "C:\\Users\\daniel.mora\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\treesitter-indent-object.nvim",
+    url = "https://github.com/kiyoon/treesitter-indent-object.nvim"
   }
 }
 
